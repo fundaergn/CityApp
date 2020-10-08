@@ -1,0 +1,32 @@
+<div class="page-home" xmlns="http://www.w3.org/1999/html">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="page-title">
+          <img class="svg" src="assets/svg/city.jpg">
+          <span>City List App</span>
+        </h2>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="mt-5">
+        <div class="col-md-6">
+          <form (ngSubmit)="onSubmit()">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="City" [(ngModel)]="city.name" name="name">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="License Plate" [(ngModel)]="city.code" name="code">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Population" [(ngModel)]="city.population" name="population">
+            </mat-form-field>
+            <button mat-raised-button color="primary" (click)="saveCity()"> Ekle</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

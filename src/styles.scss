@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  background-color: #c2c3c4;
+  padding: 50px 0;
+}
+
+.page {
+  &.home {
+    .page-title {
+      .svg {
+        width: 60px;
+        height: 60px;
+        margin-right: 15px;
+      }
+
+      span {
+
+      }
+    }
+  }
+}
